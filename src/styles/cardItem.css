@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+}
+
+.cardItem{
+    
+    height: 530px;
+    width: 350px;
+    padding: 10px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardItem .cardImg{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+/* imagen */
+.cardItem .cardImg img{
+    width: 100%;
+}
+
+/* descripcion */
+.cardDescription{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
+
+.cardDescription .title{
+    font-size: 21px;
+    margin: 6px 0;
+}
+
+.cardDescription .description {
+    display: none;
+}
+
+.cardDescription .cant{
+    color: black;
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+.cardDescription .precio{
+    color: red;
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+}
+
+/* contenedor de botones */
+
+.buttons{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons #detalles{
+    height: 50px;
+    width: 170px;
+    border-radius: 60px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+.buttons #detalles:hover{
+    background-color: darkred;
+}
+
+.white{
+    color: white;
+}
+
+.buttons #addCart{
+    font-size: 20px;
+    background-color: red;
+   padding: 8px 10px 4px 10px;
+   border-radius: 30px;
+}
+
+.buttons #detalles:hover, .buttons #addCart:hover{
+    background-color: darkred;
+    transition: 1s all;
+}

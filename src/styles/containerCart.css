@@ -1,0 +1,101 @@
+.cart{
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: auto;
+    background-color: white;
+    right: 30px;
+    top: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+}
+
+.cart .cerrar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5%;
+    width: 100%;
+}
+
+.cart .cerrar .close{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+.cart .containerItemsCart .emptyCart{
+    color: red;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart .TerminarCompra{
+    display: flex;
+    justify-content: space-between;
+    height: 8%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.cart .TerminarCompra #detalles{
+    height: 55px;
+    width: 85%;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.cart .TerminarCompra .terminar{
+    background-color: red;
+    height: 55px;
+    width: 88%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.cart .TerminarCompra .clear{
+    background-color: red;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.cart .containerItemsCart{
+    margin-left: 10px;
+}
+
+.cart .containerItemsCart img{
+    width: 100px;
+    height: 100px;
+    margin-left: 228px;
+    margin-bottom: 10px;
+    
+}
+
+.cart .containerItemsCart span{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    margin: 8px 5px 3px 5px;
+}

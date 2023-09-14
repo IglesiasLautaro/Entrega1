@@ -25,7 +25,7 @@ const CardItem = (props) => {
                         txt="Ver detalles"
                     />
                 </Link> 
-                
+
                 <ButtonAddCart 
                     id={props.id}
                 />

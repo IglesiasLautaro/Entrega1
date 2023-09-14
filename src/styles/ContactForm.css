@@ -1,0 +1,68 @@
+
+form{
+    width: 100%;
+    max-width: 765px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color: brown;
+    padding: 100px;
+    border-radius: 100px;
+}
+
+.orden{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size: 30px;
+    color: red;
+}
+input{
+    height: 38px;
+    width: 440px;
+    margin: 10px;
+    border: none;
+    border-radius: 3px;
+}
+input:hover{
+    cursor: pointer;
+    background-color: lightblue;
+}
+label{
+    margin: 5px 5px 3px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: black;
+}
+.enviar{
+    background-color: white;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 240px;
+}
+
+.enviar:hover{
+    background-color: lightblue;
+    transition: 1s all;
+}
+#nombre{
+    margin-left: 20px;
+}
+#apellido{
+    margin-left: 12px;
+}
+#contact{
+    margin-left: 20px;
+}
+#email{
+    margin-left: 41px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    /* color: white; */
+    font-size: 40px;
+    margin-bottom: 50px;
+    border: 1px solid white;
+}

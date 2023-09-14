@@ -8,7 +8,7 @@
 
 .cardItem{
     
-    height: 530px;
+    height: 600px;
     width: 350px;
     padding: 10px;
     margin: 40px;
@@ -67,13 +67,13 @@
 }
 
 .buttons #detalles{
-    height: 50px;
-    width: 170px;
+    height: 60px;
+    width: 200px;
     border-radius: 60px;
-    background-color: red;
+    background-color: brown;
     color: white;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .buttons #detalles:hover{
@@ -84,14 +84,15 @@
     color: white;
 }
 
-.buttons #addCart{
-    font-size: 20px;
-    background-color: red;
-   padding: 8px 10px 4px 10px;
-   border-radius: 30px;
+.buttons #detalles:hover, .buttons #addCart:hover{
+    background-color: lightcoral;
+    transition: 1s all;
 }
 
-.buttons #detalles:hover, .buttons #addCart:hover{
-    background-color: darkred;
-    transition: 1s all;
+.buttons #addCart{
+    background-color: brown;
+    border: none;
+    padding: 13px;
+    font-size: 20px;
+    border-radius: 10px;
 }

@@ -2,10 +2,13 @@ import ItemListContainer from "./ItemsListContainer";
 import CartWidget from "./CartWidget";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+import ContainerCart from "./ContainerCart";
+import ContextCart from "./ContextCart";
+
 
 const Navbar = () => {
     return (
-       
+        <ContextCart>
             <header>
                     <div class="container-fluid">
                         <Link className="navbar-brand fs ps-5" href="#" to="/">
@@ -22,7 +25,10 @@ const Navbar = () => {
                         />
                    
                         <CartWidget/>
+
+                        <ContainerCart />
             </header>
+        </ContextCart>
     )  
 }
 

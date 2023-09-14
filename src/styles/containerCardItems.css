@@ -4,3 +4,9 @@
     padding: 10px;
     justify-content: center;
 }
+
+.containerCardItems .containerSpinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

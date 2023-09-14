@@ -4,6 +4,8 @@ import productos from "../../utils/products";
 import {useState, useEffect} from "react";
 import "../../styles/containerCardItems.css";
 import { useParams } from "react-router-dom";
+import MoonLoader from "react-spinners/ClipLoader";
+
 
 
 const ContainerCardItems = () => {
@@ -11,6 +13,9 @@ const ContainerCardItems = () => {
     const { idCategory } = useParams();
     
     useEffect(() => {
+
+        setDatos( [] );
+
         if(idCategory == undefined){
             fetchSimulation(productos, 2000)
             .then(resp => setDatos(resp))
@@ -26,14 +31,15 @@ const ContainerCardItems = () => {
     return (
         <div className="containerCardItems">
             {
-                datos.map( product => (
+                (datos.length === 0 ) ? <div className="containerSpinner"> <MoonLoader color="red" /> </div>
+                : datos.map( product => (
                     <CardItem 
                         id={product.id}
-                        imagen={product.imageProduct.firstImage}
+                        imagen= {product.imageProduct.firstImage}
                         title={product.title}
                         cantidad={product.stock}
                         precio={product.price}
-                    />
+                    />  
                 ))
             }
         </div>

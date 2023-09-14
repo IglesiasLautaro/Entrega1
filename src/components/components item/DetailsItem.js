@@ -2,7 +2,6 @@ import Image from "./Image";
 import Description from "./Description";
 import "../../styles/detailsItem.css";
 import AddCantCart from "./AddCantCart";
-import ButtonDetalles from "./Buttondetalles";
 import { useEffect } from "react";
 import fetchSimulation from "../../utils/fetchSimulation";
 import { useParams } from "react-router-dom";
@@ -47,12 +46,9 @@ const DetailsItem = (props) => {
 
                             <div className="buttons">
                                 <AddCantCart 
-                                    cant={5}
+                                    
                                 />
-
-                                <ButtonDetalles 
-                                    txt="Agregar al carrito"
-                                />
+                            
                             </div>
                         </div>
                     

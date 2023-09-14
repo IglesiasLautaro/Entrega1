@@ -6,8 +6,8 @@ const productos = [
         description: "Tecnología que regula la temperatura automáticamente y beneficia la conservación de los alimentos. Refrigerador arriba y freezer abajo, permite mejor aprovechamiento interno, sus alimentos y bebidas siempre al alcance de las manos. Enfría rápidamente bebidas o postres y te avisa cuando están listos. Con 3 modos distintos: turbo 10, latas y espumantes.",
         stock: 10,
         type: "Heladeras",
-        imageProduct: {
-            firstImage: "heladera1.webp"
+        imageProduct:{
+            firstImage: "heladera1.webp",
         },
         price: 966000,
     },
@@ -18,7 +18,7 @@ const productos = [
         stock: 8,
         type: "Heladeras",
         imageProduct: {
-            firstImage:" heladera2.webp",
+            firstImage: "heladera2.webp",
         },
         price: 900000, 
     },
@@ -29,7 +29,7 @@ const productos = [
         stock: 3,
         type: "Heladeras",
         imageProduct: {
-            firstImage:"heladera3.webp",
+            firstImage: "heladera3.webp",
         },
         price: 812000, 
     },
@@ -75,7 +75,7 @@ const productos = [
         imageProduct: {
             firstImage:"heladera7.webp",
         },
-        price: 73669, 
+        price: 736690, 
     },
     {
         id: 8,

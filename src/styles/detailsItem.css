@@ -8,11 +8,10 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: calc(100vh-60px);
+    margin-top: 90px;
 }
 
 .detailsItem .containerLeft{
-    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +21,8 @@
 .detailsItem .containerLeft .cardImg{
     display: flex;
     justify-content: center;
+    height: 550px;
+    width: auto;
 }
 
 .detailsItem .containerRight{
@@ -30,7 +31,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    min-height: 600px;
 }
 
 .detailsItem .containerRight .cardDescription{
@@ -41,19 +41,19 @@
 }
 
 .detailsItem .containerRight .cardDescription .title{
-    font: size 45px;
+    font-size: 30px;
     margin: 10px 0;
+    color: brown;
 }
 
 .detailsItem .containerRight .cardDescription .description{
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
 }
 
 .detailsItem .containerRight .cardDescription .description .descriptionTitle{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 23px;
     margin: 10px 0;
 }
 
@@ -63,9 +63,9 @@
 }
 
 .detailsItem .containerRight .cardDescription .precio  {
-    color: red;
+    color: lightcoral;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 45px;
     margin: 10px 0;
 }
 
@@ -78,7 +78,7 @@
 }
 
 #detalles{
-    margin-right: 100px;
+    margin-right: 70px;
 }
 
 .detailsItem .containerRight .buttons .addCantCart{
@@ -91,12 +91,15 @@
     border: 1px solid red;
     font-size: 20px;
 }
+.detailsItem .containerRight .buttons .addCantCart span{
+    padding-left: 25px;
+}
 
 .detailsItem .containerRight .buttons .addCantCart #quitar,
 .detailsItem .containerRight .buttons .addCantCart #aumentar{
-    border-color: red;
-    background-color: red;
-    padding: 5px 14px 5px 14px;
+    background: white;
+    margin-left: 25px;
+    border: 1px solid red;
+    padding: 1px 11px 2px 11px;
     border-radius: 30px;
-    margin-left: 20px;
 }

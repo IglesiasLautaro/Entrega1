@@ -7,6 +7,7 @@ form{
     background-color: brown;
     padding: 100px;
     border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(10, 10, 10, 0.19);
 }
 
 .orden{
@@ -65,4 +66,18 @@ h3{
     font-size: 40px;
     margin-bottom: 50px;
     border: 1px solid white;
+}
+.containerItemsCart2{
+    background-color: brown;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 765px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px 140px 20px 140px;
+    border-radius: 100px;
+    margin-bottom: 50px;
 }

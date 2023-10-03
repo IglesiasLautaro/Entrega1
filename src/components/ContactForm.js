@@ -1,14 +1,19 @@
 import { useState } from "react";
 import '../styles/ContactForm.css';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { useContext } from "react";
+import { listCartContext } from "./components item/ProviderContextCart";
 
 const ContactForm = () => {
+
+    const { listCart } = useContext(listCartContext)
     
     const [form, setForm] = useState({
         nombre: '',
         apellido: '',
         contact: '',
         email: '',
+        order: {listCart},
     });
 
     const [id, setId] = useState();
@@ -28,6 +33,7 @@ const ContactForm = () => {
     
     return (
         <div className="contenedor">
+           
             {typeof id !== 'undefined' ? (
             <div className="orden">El mensaje se ha enviado correctamente con id: {id}</div>
             ) : (
@@ -67,8 +73,11 @@ const ContactForm = () => {
                 />
 
                 <button className="enviar">Enviar</button>
+
             </form>
+            
             )}
+             
         </div>
     )
 }

@@ -16,12 +16,12 @@ const ContainerCardItems = () => {
 
         setDatos( [] );
 
-        if(idCategory == undefined){
+        if(idCategory === undefined){
             fetchSimulation(productos, 2000)
             .then(resp => setDatos(resp))
             .catch(error => console.log(error))
         } else {
-            fetchSimulation(productos.filter(filter => filter.type == idCategory), 2000)
+            fetchSimulation(productos.filter(filter => filter.type === idCategory), 2000)
             .then(resp => setDatos(resp))
             .catch(error => console.log(error))
         }

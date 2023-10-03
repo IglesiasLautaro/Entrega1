@@ -46,7 +46,8 @@ const DetailsItem = (props) => {
 
                             <div className="buttons">
                                 <AddCantCart 
-                                    
+                                    initial={1}
+                                    stock={5}
                                 />
                             
                             </div>
